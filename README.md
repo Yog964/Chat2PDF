@@ -1,16 +1,56 @@
-# Chat2PDF — Chrome Extension 📄✨
+<div align="center">
 
-> Convert ChatGPT responses into clean, beautifully formatted study notes & PDFs with a single click.
+  <img src="icons/icon128.png" alt="Chat2PDF Logo" width="96" height="96">
 
-![Chat2PDF Banner](icons/how-to-use.png)
+  # Chat2PDF
 
-## 🌟 Features
+  **Convert ChatGPT responses into clean, beautifully formatted study notes & PDFs with a single click.**
 
-- **⚡ 1-Click Save:** Copy any ChatGPT response (`Ctrl+C`) and hover over the floating button to save.
-- **👁️ Preview & Edit Mode:** Open full preview with inline editing — click any text, heading, or code snippet to customize notes before saving.
-- **⬇️ Direct Download Mode:** Background PDF generation that triggers Chrome's native download without opening any extra tabs.
-- **🎨 Study Notes Theme:** Clean typography, navy title (`#1a237e`), red section headers (`#cc0000`), highlighted code blocks, and formatted tables with alternating rows.
-- **📄 Perfect A4 Print Layout:** Optimized page margins, borderless clean output, and smart line breaks designed for exam study notes.
+  [![Chrome Extension](https://img.shields.io/badge/Chrome-Extension-red.svg?logo=googlechrome&logoColor=white)](#-how-to-install-in-chrome)
+  [![Manifest V3](https://img.shields.io/badge/Manifest-V3-black.svg)](#-tech-stack)
+  [![License](https://img.shields.io/badge/License-MIT-blue.svg)](#-license)
+
+</div>
+
+---
+
+## 📸 Before & After
+
+| ❌ Before (Plain Unformatted Text) | ✨ After (Chat2PDF Study Notes) |
+| :---: | :---: |
+| <img src="assets/before.png" alt="Before Chat2PDF" width="380"> | <img src="assets/after.png" alt="After Chat2PDF" width="380"> |
+
+*Notice the color-coded hierarchy: Dark navy main title (`#1a237e`), red section header with indicator line (`#cc0000`), vibrant blue sub-headings (`#0277bd`), and compact exam-ready line spacing.*
+
+---
+
+## 📋 How to Use
+
+<div align="center">
+  <img src="icons/how-to-use.png" alt="Chat2PDF Guide" width="400">
+</div>
+
+1. Go to [ChatGPT](https://chatgpt.com) and ask any study or coding question.
+2. Click the **Copy response** button (`❐`) or select the text and press <kbd>Ctrl+C</kbd>.
+3. Hover over the floating **Save as PDF** button at the bottom-right corner.
+4. Pick your mode:
+   - **👁️ Preview & Edit:** Review formatted notes, click anywhere to edit text/headings directly, and print or download.
+   - **⬇️ Directly Download PDF:** 1-click silent background download straight to your Downloads folder with live status toasts!
+
+---
+
+## 🌟 Key Features
+
+- **⚡ 1-Click Save:** Copy response and hover over the floating button.
+- **👁️ Live In-Page Editor:** Click into any paragraph, heading, or code block in the preview tab to edit before saving.
+- **⬇️ Silent Background Download:** Download directly without opening any new tabs or leaving ChatGPT.
+- **🎨 Structured Study Notes Styling:**
+  - **H1 Title:** Dark Navy Blue (`#1a237e`) with clean underline.
+  - **H2 Sections:** Bold Red (`#cc0000`) with left indicator accent bar.
+  - **H3/H4 Subsections:** Darker Blue (`#0277bd`).
+  - **Tables:** Thick border (`2px solid #333`) with subtle alternating row shading.
+  - **Code Blocks & Lists:** Monospace font with tight, clean spacing.
+- **📄 Perfect A4 Print Layout:** Equalized margins and borderless clean output designed for exam study notes.
 
 ---
 
@@ -20,33 +60,22 @@
    ```bash
    git clone https://github.com/Yog964/Chat2PDF.git
    ```
-2. Open Google Chrome and go to:
+2. Open Google Chrome and navigate to:
    ```
    chrome://extensions
    ```
-3. Enable **Developer mode** (toggle in the top-right corner).
-4. Click **Load unpacked** (top-left).
-5. Select the `Chat2PDF` folder.
-6. The extension is now installed and active! 🎉
-
----
-
-## 📋 How to Use
-
-1. Go to [ChatGPT](https://chatgpt.com) and ask a question.
-2. Click the **Copy response** button (`❐`) or select the text and press <kbd>Ctrl+C</kbd>.
-3. Hover over the floating **Save as PDF** button at the bottom-right corner.
-4. Choose your option:
-   - **Preview & Edit:** Review notes, edit text directly, print or download.
-   - **Directly Download PDF:** Instant background PDF download with live status toasts!
+3. Enable **Developer mode** using the toggle switch in the top-right corner.
+4. Click the **Load unpacked** button (top-left).
+5. Select the `Chat2PDF` project folder.
+6. The extension is now active on ChatGPT! 🎉
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **Manifest V3** Chrome Extension
-- **html2pdf.js / jsPDF / html2canvas** for high-fidelity client-side PDF rendering
-- Pure JavaScript, HTML5, CSS3 (No external build tools needed)
+- **Manifest V3** Chrome Extension architecture
+- **html2pdf.js / jsPDF / html2canvas** client-side high-fidelity rendering
+- Pure JavaScript, HTML5, CSS3 (zero build steps required)
 
 ---
 
